@@ -66,9 +66,9 @@ export default class LoadingBox extends Component {
               format={percent => {
                 return (
                   <div className="app-loading-percent">
-                    <div style={{ padding: 10 }}>
+                    {/* <div style={{ padding: 10 }}>
                       <img style={{ width: 140 }} src="//cdn.h5ds.com/static/images/logo_white.png" alt="" />
-                    </div>
+                    </div> */}
                     资源载入
                     {percent}% <br />
                     <span className="app-loading-info">{sourceName}</span>
