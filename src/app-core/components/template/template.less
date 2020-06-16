@@ -1,0 +1,85 @@
+@import '../../less/variables.less';
+
+.app-template {
+  position: absolute;
+  width: 330px;
+  background: @color3;
+  top: @headerHeight;
+  left: @pageListWidth;
+  bottom: 0;
+  z-index: 200;
+  // transition: 0.5s;
+  transform: translateX(-330px);
+
+  /* 折叠按钮 */
+  .app-temps-flodbtn {
+    position: absolute;
+    top: 50%;
+    margin-top: -54px;
+    right: -24px - 24px;
+    width: 24px;
+    height: 108px;
+    line-height: 108px;
+    text-align: center;
+    color: #fff;
+    background: @main;
+    opacity: 1;
+    transition: none;
+
+    &:hover {
+      background: @mainHover;
+    }
+  }
+
+  &.app-temps-showpanel {
+    transform: translateX(0);
+    z-index: 1001;
+
+    .app-temps-flodbtn {
+      right: -24px;
+    }
+  }
+}
+
+.app-template {
+  .app-tab-header {
+    li {
+      width: 50%;
+      padding: 0;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+
+  .app-tab-body {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .app-tab-box {
+    padding: 10px;
+  }
+}
+
+.app-page-min {
+  height: @appHeight;
+  width: @appWidth;
+  transform-origin: 0 0;
+  transform: scale(0.28);
+  z-index: 0;
+  position: relative;
+  background: #fff;
+
+  .app-swiper-layers,
+  .app-swiper-page {
+    pointer-events: none;
+    display: block;
+
+    .element {
+      animation: none !important;
+      opacity: 1 !important;
+    }
+  }
+}

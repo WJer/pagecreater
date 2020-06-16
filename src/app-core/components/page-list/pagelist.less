@@ -1,0 +1,198 @@
+@import '../../less/variables.less';
+
+.app-pagelist {
+    position: absolute;
+    width: @pageListWidth;
+    top: @headerHeight;
+    left: 0;
+    bottom: 0;
+    background: @color3;
+    z-index: 1002;
+
+    .app-page-name{
+      word-break: break-all;
+      padding: 5px;
+      span{
+        display: inline-block;
+        border-radius: 100px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        background: @color2;
+        color: #fff;
+        font-size: 12px;
+        margin-right: 5px;
+      }
+    }
+
+    .app-pagelist-btn {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 29px;
+        border-top: 1px solid #000;
+        color: @text1;
+
+        li {
+            display: inline-block;
+            height: 30px;
+            width: 33.333%;
+            background: @color5;
+
+            &.app-active {
+                background: @main;
+                color: @text2;
+            }
+        }
+    }
+
+    .app-pagelist-pages {
+        position: absolute;
+        top: 31px;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        overflow: hidden;
+        overflow-y: scroll;
+        padding-bottom: 20px;
+    }
+}
+
+@liwidth : 22px;
+
+.app-pagelist-pages {
+    li {
+        width: 100px;
+        height: 160px;
+        margin-left: 10px;
+        margin-top: 10px;
+        position: relative;
+        cursor: pointer;
+        color: @color3;
+        font-size: 14px;
+        background: #fff;
+        box-sizing: content-box;
+    }
+
+    .app-pagelist-page-item {
+        background: #fff;
+    }
+
+    .app-pagelist-edit-page {
+        .app-ico {
+            font-size: 14px;
+        }
+    }
+
+    .app-pagelist-active:after {
+        display: inline-block;
+        content: '\e618';
+        font-family: "app-ico" !important;
+        font-size: 20px;
+        position: absolute;
+        z-index: 1000;
+        top: 50%;
+        left: 50%;
+        margin: -10px 0 0 -12px;
+        color: @main;
+    }
+
+    .app-pagelist-active:before {
+        display: inline-block;
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        background: rgba(0, 0, 0, .3);
+    }
+
+    .app-pagelist-page-content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        overflow: hidden;
+
+        .app-page-min {
+            pointer-events: none;
+            transform: scale(0.312);
+        }
+    }
+
+    .app-pagelist-page-info {
+        position: absolute;
+        right: -@liwidth;
+        top: 0;
+        height: 100%;
+        width: @liwidth;
+
+        a {
+            width: 100%;
+            height: @liwidth;
+            font-size: 12px;
+            color: @text2;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+            line-height: @liwidth;
+
+            &.app-pagelist-add {
+                background: @color4;
+            }
+
+            &.app-pagelist-important {
+                background: @main;
+            }
+        }
+    }
+}
+
+.app-pagelist-fixeds-info {
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+    background: @color2;
+    width: 100%;
+    height: 22px;
+    text-indent: 5px;
+    line-height: 1.5em;
+    color: @text2;
+}
+
+.app-pagelist-page-info {
+    .app-pagelist-item {
+        margin: 20px 20px 20px 20px;
+    }
+
+    label {
+        display: inline-block;
+        width: 80px;
+        vertical-align: top;
+        text-align: right;
+    }
+
+    input {
+        width: 300px;
+        border-radius: 0;
+    }
+
+    textarea {
+        width: 300px;
+        border-radius: 0;
+    }
+}
+
+.app-pagelist-loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: @color2;
+}

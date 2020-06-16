@@ -1,0 +1,90 @@
+@import '../../../less/variables.less';
+
+.app-event {
+    .app-eventbox-content {
+        margin: 10px 0;
+        font-size: 14px;
+        color: @text1;
+    }
+
+    .app-eventbox-tips {
+        color: @text1;
+    }
+}
+
+.app-event-set {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  background: @color3;
+  top: 4px;
+  bottom: 0;
+  left: 0;
+  transition: .4s;
+  transform: translateX(350px);
+
+  .app-close-event,
+  .app-clear-event {
+      position: absolute; //
+      right: 10px;
+      top: 10px;
+      color: @text2;
+      width: 160px;
+      text-align: center;
+      padding: 4px 10px;
+      background: @main;
+
+      .h5ds {
+          display: inline-block;
+          border-radius: 100px;
+          width: 20px;
+          height: 20px;
+          color: @text2;
+          text-align: center;
+          line-height: 20px;
+          font-size: 12px;
+          position: relative;
+          top: -1px;
+      }
+  }
+
+  .app-close-event {
+      left: 10px;
+      right: auto;
+  }
+
+  .app-clear-event {
+      font-size: 14px;
+      font-weight: normal;
+      background: @color1;
+      color: @color5;
+
+      .h5ds {
+          font-size: 14px;
+          font-weight: bolder;
+      }
+  }
+
+  .app-event-title {
+      margin: 10px 0;
+      color: @text1;
+      font-size: 14px;
+  }
+
+  .app-event-set-box {
+      .app-eventbox {
+          margin: 0 10px;
+      }
+
+      position: absolute;
+      top: 50px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: auto;
+  }
+}
+
+.app-event-show {
+  transform: translateX(0);
+}

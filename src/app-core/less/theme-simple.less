@@ -1,0 +1,482 @@
+.app-theme-simple {
+    @main: #40a9ff;
+    @bg: #fff;
+    @bg2: #f8f8f8;
+    @color0: #fff;
+    @color1: rgb(231, 231, 231);
+    @color2: #999;
+    @color3: #666;
+    @color4: #333;
+    @color5: #000;
+
+    #App {
+
+        .ant-input,
+        .ant-input-number-input,
+        .ant-input-number {
+            background: @color1;
+            color: @color4;
+            border-radius: 0;
+        }
+
+        .ant-input-number-handler-wrap {
+            border-radius: 0;
+            background: @color1;
+            border-color: @color2 ;
+        }
+
+        .app-basic-animateset-addbtn {
+            background: @color0 ;
+            border-color: @color2 ;
+            color: @color2 ;
+        }
+
+        .ant-radio-button-wrapper {
+            background: @color0;
+            color: @color2;
+        }
+
+        .ant-radio-button-wrapper-checked {
+            background: @main;
+            color: @color0;
+        }
+
+        .ant-select-selection {
+            background: @color1;
+            color: @color3;
+
+            .ant-select-arrow {
+                color: @color3;
+            }
+        }
+
+        .app-basic-animateset-item {
+            background: @color1;
+
+            .app-layout-setitem-name {
+                color: @color2;
+            }
+        }
+
+        .app-basic-animateset-item.app-basic-animateset-active {
+            background: @main;
+
+            .app-layout-setitem-name {
+                color: @color0;
+            }
+        }
+
+        .app-basic-animateset-item .app-layout-setitem-content {
+            color: @color5;
+        }
+
+        .app-basic-animateset-btndel,
+        .app-basic-animateset-btnset {
+            background: @main;
+        }
+    }
+
+    .app-layout-setitem-name {
+        color: @color3;
+    }
+
+    .app-modal-source {
+        background: @bg;
+    }
+
+    .app-modal.app-modal-hastitle .app-modal-title .app-modal-title-icon {
+        background: @main;
+    }
+
+    .app-source .app-source-content .app-source-item {
+        background: @color1;
+        color: @color3;
+    }
+
+    .h5dsSlider {
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: @color1;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: @color2;
+            border-radius: 100px;
+        }
+
+        &::-webkit-scrollbar-thumb:window-inactive {
+            background: @color2;
+        }
+
+        &::-webkit-scrollbar-button:vertical:decrement,
+        &::-webkit-scrollbar-button:vertical:increment {
+            height: 5px;
+            width: 5px;
+            background: @color2;
+        }
+    }
+
+    /*滚动条*/
+    div {
+        .h5dsSlider;
+    }
+
+    .app-layout-frame {
+        // background: @bg;
+    }
+
+    // header
+    .app-header {
+        background: @bg;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+
+        .app-publish-box {
+            .app-ico {
+                color: @color3;
+            }
+
+            a {
+                color: @color3;
+            }
+        }
+
+        .app-h5set .app-btn-yellow {
+            color: @color0;
+        }
+
+        .app-h5type {
+            background: @color1;
+
+            a {
+                color: @color3;
+            }
+
+            a.active {
+                color: @color0;
+                background: @main;
+            }
+        }
+
+        .app-logo {
+            a {
+                color: #000;
+            }
+
+            span {
+                color: @main;
+            }
+        }
+    }
+
+    // 菜单
+    .app-layermenu {
+        a {
+            color: @color3;
+        }
+    }
+
+    // 左侧
+    .app-pagelist {
+        background: @color1;
+        box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
+
+        .app-pagelist-pages {
+            .app-pagelist-page-item {
+                background: @color0;
+            }
+
+            .app-pagelist-page-info a {
+                background: @main;
+                color: @color0;
+            }
+
+            .app-pagelist-active:after {
+                color: @main;
+            }
+        }
+
+        .app-pagelist-btn {
+            li {
+                background: @color1;
+                color: @color3;
+            }
+
+            li.app-active {
+                background: @main;
+            }
+        }
+    }
+
+    // center
+    .app-center {
+        background: @bg;
+
+        .app-ruler-line {
+            canvas {
+                background: @bg2;
+            }
+        }
+
+        .app-canvas-border {
+            border: 10000px solid rgba(217, 217, 217, 0.4);
+        }
+    }
+
+    // 时间轴
+    .app-timeline-box {
+        background: @color0;
+
+        .app-timeline-slider {
+            background: @color1;
+
+            &::-webkit-scrollbar-track {
+                background: @color1;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: @color2;
+            }
+
+            &::-webkit-scrollbar-thumb:window-inactive {
+                background: @color2;
+            }
+
+            &::-webkit-scrollbar-button:vertical:decrement,
+            &::-webkit-scrollbar-button:vertical:increment {
+                background: @color2;
+            }
+        }
+
+        .app-timeline {
+            border-color: @color1;
+
+            .app-timeline-header .app-timeline-bar {
+                border-color: @color3;
+                background: rgba(255, 255, 255, 0.3);
+
+                &::before {
+                    background: @color3;
+                }
+            }
+
+            .app-timeline-footer .app-timeline-right {
+                background: @color1;
+            }
+
+            .app-timeline-scale li {
+                span {
+                    color: @color2;
+                }
+
+                &::before {
+                    background: @color2;
+                }
+
+                .app-timeline-dot {
+                    background: @color5;
+                }
+            }
+
+            .app-ico {
+                color: @color4;
+            }
+        }
+
+        .app-timeline-btn {
+            background: @color1;
+        }
+
+        .app-timeline-left {
+            background: @color1;
+        }
+
+        .app-timeline .app-timeline-body .app-timeline-left li {
+            background: @color0;
+            border-color: @color1;
+        }
+
+        .app-timeline .app-timeline-body .app-timeline-left .app-timeline-active {
+            background: @main;
+            border-color: @color0;
+        }
+
+        .app-timeline .app-timeline-footer .app-timeline-left {
+            background: @color1;
+        }
+
+        .app-timeline .app-timeline-item1 {
+            border-color: @color1;
+        }
+
+        .app-timeline .app-timeline-body .app-timeline-right li {
+            border-color: @color1;
+        }
+    }
+
+    // canvas
+    .app-canvas {
+        background: @bg;
+    }
+
+    .app-layerlist {
+        background: @color0;
+
+        h1 span {
+            color: @color4;
+        }
+
+        .app-ico {
+            color: @main;
+        }
+
+        ul {
+            border-top: 1px solid @color2;
+
+            .app-layerlist-active {
+                background: @main;
+
+                span {
+                    color: #fff;
+                }
+            }
+        }
+
+        ul .app-layerlist-active .app-layerlist-locklayer .app-ico {
+            color: @color1;
+        }
+
+        ul li {
+            background: @color0;
+            color: @color4;
+            border-color: @color2;
+
+            span.name {
+                border-color: @color2;
+            }
+        }
+    }
+
+    .app-util-cropimage-btns,
+    .app-util-cropimage {
+        background: @color1;
+
+        a {
+            color: @color4;
+        }
+    }
+
+    .app-shortcut {
+        background: @bg;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
+        a,
+        span {
+            color: @color3;
+
+            &:hover {
+                color: @main;
+            }
+        }
+
+        .app-ico-caidan {
+            color: @main;
+        }
+
+        h5 {
+            background: @bg;
+            color: @color3;
+
+            a {
+                color: @main;
+            }
+        }
+    }
+
+    .app-editarea {
+        background: @bg;
+
+        input {
+            background: @color1;
+        }
+    }
+
+    .app-basic-tabs .ant-tabs-bar {
+        border-color: @color1;
+    }
+
+    .app-animatelist {
+        background: @color0;
+
+        ul.app-basic-animatelist-ul li {
+            background: @color1;
+            color: @color3;
+        }
+
+        .ant-tabs-tab {
+            color: @color3;
+        }
+    }
+
+    .app-basic-animatelist-close {
+        background: @main;
+    }
+
+    .app-layerset-tabsbox>.ant-tabs>.ant-tabs-bar .ant-tabs-nav .ant-tabs-tab {
+        color: @color3;
+    }
+
+    .app-layerset-tabsbox>.ant-tabs>.ant-tabs-bar {
+        border-color: @color1;
+    }
+
+    .app-eventlist li.app-event-item {
+        background: @color1;
+        color: @color3;
+    }
+
+    .app-event-list li.app-event {
+        background: @color1;
+        color: @color3;
+    }
+
+    .app-event-set .app-close-event {
+        background: @main;
+    }
+
+    .app-event-set .app-clear-event {
+        background: @color1;
+        color: @color3;
+    }
+
+    .app-event-set {
+        background: @color0;
+
+        textarea,
+        input {
+            background: @color1;
+        }
+
+        .app-eventbox-content,
+        .app-event-title {
+            color: @color2;
+        }
+    }
+
+    .app-util-cropimage-nullimg {
+        background: @color1;
+    }
+
+    .app-ex-h5ds_text-btn {
+        background: @color1;
+    }
+
+    .app-ex-h5ds_text-btn.app-active {
+        background: @color2;
+        color: @color0;
+    }
+
+}

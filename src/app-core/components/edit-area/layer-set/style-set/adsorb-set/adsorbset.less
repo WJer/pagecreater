@@ -1,0 +1,77 @@
+@import "../../../../../less/variables.less";
+
+.app-adsorbset {
+    @size: 10px;
+
+    .app-adsorbset-tips{
+      color: @text1;
+      font-size: 12px;
+      padding: 10px 0;
+    }
+    .app-adsorbset-dots {
+        margin: 20px 0;
+        width: 60px;
+        height: 40px;
+        position: relative;
+        border: 1px dashed @color1;
+        a {
+            display: inline-block;
+            width: @size;
+            height: @size;
+            background: @color3;
+            border: 1px dashed @color1;
+            position: absolute;
+            &:hover{
+              background: @color5;
+            }
+        }
+        a.app-adsorbset-active {
+          background: @main;
+          border: 1px solid @main;
+        }
+
+        .app-adsorbset-top-left {
+            top: -@size/2;
+            left: -@size/2;
+        }
+
+        .app-adsorbset-top-center {
+            top: -@size/2;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .app-adsorbset-top-right {
+            top: -@size/2;
+            right: -@size/2;
+        }
+
+        .app-adsorbset-left-center {
+            left: -@size/2;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .app-adsorbset-right-center {
+            right: -@size/2;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .app-adsorbset-bottom-left {
+            bottom: -@size/2;
+            left: -@size/2;
+        }
+
+        .app-adsorbset-bottom-center {
+            bottom: -@size/2;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .app-adsorbset-bottom-right {
+            bottom: -@size/2;
+            right: -@size/2;
+        }
+    }
+}
