@@ -1,0 +1,103 @@
+<!-- <%@ page contentType="text/html;charset=UTF-8" %> -->
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"/>
+    <meta content="viewport-fit=cover" />
+    <title>纷享销客</title>
+    <style>
+        html, body {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .content {
+            height: 100%;
+            background: #F3F5F8;
+            box-sizing: border-box;
+            text-align: center;
+            overflow: hidden;
+            padding-bottom: constant(safe-area-inset-bottom);
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        .bg {
+            width: 100%;
+            max-width: 375px;
+        }
+        .text {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #67717F;
+        }
+        #h5_hype_container {
+            width: 64px!important;
+            height: 64px!important;
+        }
+        .HYPE_scene{
+            background-color: #F3F5F8!important;
+            width: 64px!important;
+            height: 64px!important;
+        }
+        .HYPE_element_container:nth-child(1) .HYPE_element {
+            font-size: 12px!important;
+            width: 60px!important;
+            height: 36px!important;
+            line-height: 36px;
+            text-align: center;
+            padding: 8px 0!important;
+        }
+        .HYPE_element_container:nth-child(2) .HYPE_element,
+        .HYPE_element_container:nth-child(3) .HYPE_element,
+        .HYPE_element_container:nth-child(4) .HYPE_element {
+            width: 60px!important;
+            height: 60px!important;
+        }
+        .HYPE_element_container:nth-child(5) .HYPE_element {
+            background-color: #F3F5F8!important;
+            width: 48px!important;
+            height: 48px!important;
+        }
+    </style>
+</head>
+<body>
+<div class="content" id="app">
+    <div>
+        <img class="bg" src="https://www.fxiaoke.com/hstatic/hcrm/pages/images/noauth.svg" />
+    </div>
+    <div id="h5_hype_container" style="margin:auto;position:relative;width:48px;height:48px;overflow:hidden;">
+        <script type="text/javascript" charset="utf-8" src="./js/loading.js?91408"></script>
+    </div>
+    <p class="text">企业初始化当中</p>
+</div>
+</body>
+<script type="text/javascript">
+    var isAllowClick = false;
+    var isInApp = false;
+    var I = 0;
+    setTimeout(function () {
+        document.getElementById('h5_hype_container').onclick = function () {
+            if (isInApp) {
+                location.reload()
+            }else{
+                document.getElementById('app').innerHTML = '<p class="text">进入应用中...</p>';
+                setTimeout(function () {
+                    location.reload()
+                }, 1500)
+            }
+        }
+        document.querySelectorAll('.HYPE_element')[0].innerText = '进入应用'
+    }, 4500)
+    setTimeout(function () {
+        isInApp = true;
+    }, 7000)
+</script>
+</html>	

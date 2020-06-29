@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>转动</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" fill="#048CEC" fill-rule="nonzero">
+            <path d="M22,0 C34.1502645,0 44,9.8497355 44,22 C44,34.1502645 34.1502645,44 22,44 C9.8497355,44 0,34.1502645 0,22 C0,20.3431458 1.34314575,19 3,19 C4.65685425,19 6,20.3431458 6,22 C6,30.836556 13.163444,38 22,38 C30.836556,38 38,30.836556 38,22 C38,13.163444 30.836556,6 22,6 C20.3431458,6 19,4.65685425 19,3 C19,1.34314575 20.3431458,0 22,0 Z" id="转动"></path>
+        </g>
+    </g>
+</svg>
